@@ -22,11 +22,18 @@ class ViewController: UIViewController {
         
         print("ViewController - onCreatePopUpClieed() called")
         let stotryboard = UIStoryboard.init(name: "PoPUp", bundle: nil)
-        let alertPopUpVC = stotryboard.instantiateViewController(withIdentifier: "AlertPopUpVC")
-        alertPopUpVC.modalPresentationStyle = .overCurrentContext
-        alertPopUpVC.modalTransitionStyle = .crossDissolve
+        let customPopUpVC = stotryboard.instantiateViewController(withIdentifier: "AlertPopUpVC") as! CustomPopUpViewController
+        customPopUpVC.modalPresentationStyle = .overCurrentContext
+        customPopUpVC.modalTransitionStyle = .crossDissolve
+        customPopUpVC.subscribeBtnCompletionClosure = {
+            
+            print("컴플리션 블럭이 호출되었다.")
+            let myChannelUrl = URL(string: "https://www.naver.com")
+            self.myWebView.load(URLRequest(url: myChannelUrl!))
+            
+        }
         
-        self.present(alertPopUpVC, animated: true, completion: nil)
+        self.present(customPopUpVC, animated: true, completion: nil)
         
     }
     
