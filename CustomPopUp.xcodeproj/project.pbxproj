@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B21B845F27994A2900057387 /* CustomPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21B845E27994A2900057387 /* CustomPopUpViewController.swift */; };
+		B21B84622799500900057387 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21B84612799500900057387 /* WebKit.framework */; };
 		B297FA9727993FFC0077A05D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297FA9627993FFC0077A05D /* AppDelegate.swift */; };
 		B297FA9927993FFC0077A05D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297FA9827993FFC0077A05D /* SceneDelegate.swift */; };
 		B297FA9B27993FFC0077A05D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297FA9A27993FFC0077A05D /* ViewController.swift */; };
 		B297FA9E27993FFC0077A05D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B297FA9C27993FFC0077A05D /* Main.storyboard */; };
 		B297FAA027993FFE0077A05D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B297FA9F27993FFE0077A05D /* Assets.xcassets */; };
 		B297FAA327993FFE0077A05D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B297FAA127993FFE0077A05D /* LaunchScreen.storyboard */; };
+		B297FAAB279941690077A05D /* PoPUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B297FAAA279941690077A05D /* PoPUp.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B21B845E27994A2900057387 /* CustomPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopUpViewController.swift; sourceTree = "<group>"; };
+		B21B84612799500900057387 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B297FA9327993FFC0077A05D /* CustomPopUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPopUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B297FA9627993FFC0077A05D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B297FA9827993FFC0077A05D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		B297FA9F27993FFE0077A05D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B297FAA227993FFE0077A05D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B297FAA427993FFE0077A05D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B297FAAA279941690077A05D /* PoPUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PoPUp.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21B84622799500900057387 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B21B84602799500900057387 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B21B84612799500900057387 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B297FA8A27993FFC0077A05D = {
 			isa = PBXGroup;
 			children = (
 				B297FA9527993FFC0077A05D /* CustomPopUp */,
 				B297FA9427993FFC0077A05D /* Products */,
+				B21B84602799500900057387 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +75,8 @@
 				B297FA9627993FFC0077A05D /* AppDelegate.swift */,
 				B297FA9827993FFC0077A05D /* SceneDelegate.swift */,
 				B297FA9A27993FFC0077A05D /* ViewController.swift */,
+				B21B845E27994A2900057387 /* CustomPopUpViewController.swift */,
+				B297FAAA279941690077A05D /* PoPUp.storyboard */,
 				B297FA9C27993FFC0077A05D /* Main.storyboard */,
 				B297FA9F27993FFE0077A05D /* Assets.xcassets */,
 				B297FAA127993FFE0077A05D /* LaunchScreen.storyboard */,
@@ -103,7 +121,7 @@
 				};
 			};
 			buildConfigurationList = B297FA8E27993FFC0077A05D /* Build configuration list for PBXProject "CustomPopUp" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -128,6 +146,7 @@
 				B297FAA327993FFE0077A05D /* LaunchScreen.storyboard in Resources */,
 				B297FAA027993FFE0077A05D /* Assets.xcassets in Resources */,
 				B297FA9E27993FFC0077A05D /* Main.storyboard in Resources */,
+				B297FAAB279941690077A05D /* PoPUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21B845F27994A2900057387 /* CustomPopUpViewController.swift in Sources */,
 				B297FA9B27993FFC0077A05D /* ViewController.swift in Sources */,
 				B297FA9727993FFC0077A05D /* AppDelegate.swift in Sources */,
 				B297FA9927993FFC0077A05D /* SceneDelegate.swift in Sources */,
