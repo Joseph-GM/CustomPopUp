@@ -16,6 +16,7 @@
 		B297FAA027993FFE0077A05D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B297FA9F27993FFE0077A05D /* Assets.xcassets */; };
 		B297FAA327993FFE0077A05D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B297FAA127993FFE0077A05D /* LaunchScreen.storyboard */; };
 		B297FAAB279941690077A05D /* PoPUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B297FAAA279941690077A05D /* PoPUp.storyboard */; };
+		B2D115BF279A2FA200B56696 /* PopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D115BE279A2FA200B56696 /* PopUpDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B297FAA227993FFE0077A05D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B297FAA427993FFE0077A05D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B297FAAA279941690077A05D /* PoPUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PoPUp.storyboard; sourceTree = "<group>"; };
+		B2D115BE279A2FA200B56696 /* PopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				B297FA9F27993FFE0077A05D /* Assets.xcassets */,
 				B297FAA127993FFE0077A05D /* LaunchScreen.storyboard */,
 				B297FAA427993FFE0077A05D /* Info.plist */,
+				B2D115BE279A2FA200B56696 /* PopUpDelegate.swift */,
 			);
 			path = CustomPopUp;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2D115BF279A2FA200B56696 /* PopUpDelegate.swift in Sources */,
 				B21B845F27994A2900057387 /* CustomPopUpViewController.swift in Sources */,
 				B297FA9B27993FFC0077A05D /* ViewController.swift in Sources */,
 				B297FA9727993FFC0077A05D /* AppDelegate.swift in Sources */,
