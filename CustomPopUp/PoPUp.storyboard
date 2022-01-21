@@ -47,10 +47,24 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rwf-KX-wcS">
-                                        <rect key="frame" x="50" y="288" width="150" height="82"/>
+                                        <rect key="frame" x="50" y="242" width="150" height="128"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5F4-hP-jXe">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXQ-PS-OSr">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="36"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="skJ-FM-Dq8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="내 블로그">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onBlogBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8Ar-N5-BrQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5F4-hP-jXe">
+                                                <rect key="frame" x="0.0" y="46" width="150" height="36"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="fuk-71-6VS"/>
@@ -64,7 +78,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpJ-kl-jA2">
-                                                <rect key="frame" x="0.0" y="46" width="150" height="36"/>
+                                                <rect key="frame" x="0.0" y="92" width="150" height="36"/>
                                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="KK2-xp-LDm"/>
@@ -108,6 +122,7 @@
                     </view>
                     <connections>
                         <outlet property="bgBtn" destination="QgT-5C-23J" id="XbM-Kb-XFf"/>
+                        <outlet property="blogBtn" destination="RXQ-PS-OSr" id="ewS-Ft-nw9"/>
                         <outlet property="contentView" destination="lOx-J1-AIc" id="D9l-QD-aOv"/>
                         <outlet property="openChatBtn" destination="5F4-hP-jXe" id="xq4-F7-byB"/>
                         <outlet property="subscribeBtn" destination="cpJ-kl-jA2" id="T2g-3Q-Ncb"/>
@@ -128,6 +143,9 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

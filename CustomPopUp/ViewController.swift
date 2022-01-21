@@ -8,18 +8,29 @@
 import UIKit
 import WebKit
 
+let notificationName = "btnClickNotification"
+
 class ViewController: UIViewController, PopUpDelegate {
    
     
 
     @IBOutlet weak var myWebView: WKWebView!
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(loadWebView), name: NSNotification.Name(rawValue: notificationName), object: nil)
         // Do any additional setup after loading the view.
     }
 
+    @objc fileprivate func loadWebView() {
+        print("ViewController - loadWebVeie() called")
+        let myChannelUrl = URL(string: "https://velog.io/@jjbrother")
+        self.myWebView.load(URLRequest(url: myChannelUrl!))
+    }
     @IBAction func onCreatePopUpClicked(_ sender: UIButton) {
         
         print("ViewController - onCreatePopUpClieed() called")
